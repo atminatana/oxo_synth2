@@ -1,0 +1,164 @@
+# docs.toml — манифест документации (doc-system v1.0.0).
+#
+# Единственный источник истины о документах: пути, обязательные разделы,
+# влияние кода (sources), база и момент проверки (verified).
+# Файл читается runtime scripts/doc_system.py; служебные фрагменты документов
+# генерируются командой sync. Поля verified обновляет только touch.
+
+[meta]
+version = 1
+system = "doc-system"
+system_version = "1.0.0"
+preset = "generic"
+installed_at = "2026-11-12"
+max_age_days = 90
+handoff_path = "docs/agents/handoff.md"
+handoff_soft_days = 30
+root_coverage = false
+required_files = ["AGENTS.md", "docs/docs.toml", "README.md", "scripts/doc_system.py"]
+
+# ---------------------------------------------------------------------------
+# Документы
+# ---------------------------------------------------------------------------
+
+[[doc]]
+path = "CONTRIBUTING.md"
+title = "Участие в разработке"
+summary = "Правила для людей: подготовка, проверки, коммиты, документы"
+sources = ["Makefile", "scripts/doc_system.py"]
+sections = ["Перед началом", "Локальные проверки"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "CHANGELOG.md"
+title = "История изменений"
+summary = "Живой журнал изменений в формате Keep a Changelog"
+sources = []
+sections = ["Unreleased"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/README.md"
+title = "Индекс документации"
+summary = "С чего начать чтение и как поддерживать документы"
+sources = []
+sections = ["Порядок чтения", "Карта документации", "Как добавить новый документ"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/architecture.md"
+title = "Архитектура"
+summary = "Текущее состояние, целевая структура, инварианты, открытые вопросы"
+sources = [
+  "EngineCore/**",
+  "EditorCore/**",
+  "Shared/**",
+  "OxoSynth2VST3/**",
+  "OxoSynth2AudioUnit/**",
+  "Windows_Build/**",
+  "Identity.xcconfig",
+]
+sections = ["Текущее состояние", "Целевая архитектура", "Инварианты", "Открытые вопросы"]
+verified = { commit = "6953424", date = "2026-11-12", time = 1794516872.394 }
+
+[[doc]]
+path = "docs/project-map.md"
+title = "Карта проекта"
+summary = "Что где лежит, с чего начать типовую задачу, какие выходят артефакты"
+sources = [
+  "EngineCore/**",
+  "EditorCore/**",
+  "Shared/**",
+  "OxoSynth2VST3/**",
+  "OxoSynth2AudioUnit/**",
+  "Windows_Build/**",
+  "tools/**",
+  "Identity.xcconfig",
+  "build_vst3.sh",
+  "build_windows.bat",
+]
+sections = ["Дерево репозитория", "Задача → файлы", "Сборка и артефакты", "Данные и пути"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/development.md"
+title = "Разработка"
+summary = "Команды, тесты, сборки и диагностика"
+sources = [
+  "Makefile",
+  "docs.mk",
+  "build_vst3.sh",
+  "build_windows.bat",
+  "EngineCoreTests/Makefile",
+  "scripts/**",
+  "tools/**",
+]
+sections = ["Команды", "Тесты", "Хуки и CI", "Диагностика"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/roadmap.md"
+title = "Дорожная карта"
+summary = "Снимок состояния и планируемые шаги"
+sources = []
+sections = ["Сейчас", "Дальше", "Потом"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/agents/workflow.md"
+title = "Рабочий цикл агента"
+summary = "Пошаговый процесс: ориентация, изменения, проверка, отчёт"
+sources = ["Makefile", "docs.mk", "scripts/doc_system.py"]
+sections = ["Цикл работы", "Проверка результата", "Обновление документации", "Отчёт пользователю"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/agents/doc-maintenance.md"
+title = "Поддержание документации"
+summary = "Устройство self-updating docs: манифест, команды, политика актуальности"
+sources = ["scripts/doc_system.py", "docs/docs.toml", "Makefile", "docs.mk"]
+sections = ["Манифест", "Команды", "Политика актуальности", "Генерируемые фрагменты"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/agents/handoff.md"
+title = "Handoff — журнал передачи работы"
+summary = "Живой журнал: что сделано, что открыто, что делать дальше"
+sources = []
+sections = ["Формат записи"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/adr/README.md"
+title = "ADR — оглавление и процесс"
+summary = "Как фиксировать архитектурные решения и как их читать"
+sources = []
+sections = ["Процесс", "Индекс", "Шаблон"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+
+[[doc]]
+path = "docs/adr/0001-record-architecture-decisions.md"
+title = "ADR-0001: фиксируем решения через ADR"
+summary = "Решение использовать лёгкие Architecture Decision Records"
+sources = []
+sections = ["Статус", "Контекст", "Решение", "Последствия"]
+verified = { commit = "none", date = "2026-11-12", time = 0.0 }
+immutable = true
+
+[[doc]]
+path = "docs/adr/0002-clean-room-via-audio.md"
+title = "ADR-0002: чистая комната"
+summary = "Оригинал изучается только по аудио и опубликованному AU-интерфейсу"
+sources = []
+sections = ["Статус", "Контекст", "Решение", "Последствия"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+immutable = true
+
+[[doc]]
+path = "docs/adr/0003-no-juce-header-only-engine.md"
+title = "ADR-0003: движок без JUCE"
+summary = "Header-only C++20 движок и нативные оболочки вместо фреймворка"
+sources = []
+sections = ["Статус", "Контекст", "Решение", "Последствия"]
+verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+immutable = true

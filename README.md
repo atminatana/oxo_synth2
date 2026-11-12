@@ -181,6 +181,20 @@ on first run. `--help` lists the options.
 agents: rules, architecture, build / test commands, and the measured facts
 about the original and how they were measured.
 
+## Documentation
+
+The docs live in `docs/` and are maintained as code (`make docs-check`):
+
+- [`docs/README.md`](docs/README.md) — the reading order and the document index.
+- [`docs/project-map.md`](docs/project-map.md) — what lives where, and which
+  files to start from for a given task.
+- [`docs/architecture.md`](docs/architecture.md) — layer boundaries and the
+  invariants that must not break.
+- [`docs/development.md`](docs/development.md) — build, test and diagnostic
+  commands for every platform.
+- [`docs/adr/`](docs/adr/README.md) — architecture decision records (why the
+  engine is JUCE-free, why the original is studied as a black box).
+
 ## Reference data (for engine work)
 
 The engine's tables come from measurements of the original plugin

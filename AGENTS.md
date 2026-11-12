@@ -5,6 +5,9 @@ rules, architecture contracts, build / test commands, and the MEASURED facts
 about the original Synth1 (do not rediscover them). History lives in git;
 keep this file current, not chronological.
 
+Where things live: `docs/project-map.md`; how the code is layered and which
+invariants hold: `docs/architecture.md`; the docs index: `docs/README.md`.
+
 ## Rules
 
 - CLEAN ROOM: the original Synth1 is studied ONLY through its audio output
@@ -1182,3 +1185,22 @@ original AU; keeps both renders for listening).
   patch0010 (LPDL + smooth random LFO). A resonant LP24 pulled shut by a
   strongly negative env with a slow attack stays louder in the original.
   PW: within ~1 / 254 of the original.
+
+<!-- BEGIN doc-system -->
+## Документация (doc-system v1.0.0)
+
+В проекте включена самообновляемая документация **doc-system**. Единственный источник истины о
+документах — `docs/docs.toml`; служебные фрагменты (футеры, индекс, файлы-указатели) генерируются.
+
+- Перед работой: `docs/README.md` → `docs/architecture.md` → профильные документы и ADR.
+- Проверка документации: `python3 scripts/doc_system.py check` (или `make docs-check`).
+- После правок документов: `python3 scripts/doc_system.py touch <пути>` (или `make docs-touch ARGS="..."`).
+- Один раз после первого коммита: `python3 scripts/doc_system.py touch --all` (baseline).
+- Что менял → что обновить, Definition of Done и запреты — в `AGENTS.md` (раздел документации).
+- Пользовательское изменение — в `CHANGELOG.md` → `[Unreleased]`; состояние сессии — в
+  `docs/agents/handoff.md`.
+- Не редактируй сгенерированные фрагменты вручную: их строит `sync` по манифесту и содержимому
+  документов.
+
+Подробности — `docs/agents/workflow.md` и `docs/agents/doc-maintenance.md`.
+<!-- END doc-system -->
