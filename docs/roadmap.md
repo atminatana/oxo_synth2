@@ -67,5 +67,5 @@
 - После существенного пересмотра — `python3 scripts/doc_system.py touch docs/roadmap.md`.
 
 <!-- agents:footer:start — генерируется scripts/doc_system.py sync; не редактировать вручную -->
-> 🤖 Проверено: 2026-11-13 · база: 6953424. Правила ведения документации — [AGENTS.md](../AGENTS.md).
+> 🤖 Проверено: 2026-11-13 · база: 14852b7. Правила ведения документации — [AGENTS.md](../AGENTS.md).
 <!-- agents:footer:end -->

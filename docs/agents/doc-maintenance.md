@@ -122,5 +122,5 @@ python3 <path-to-doc-system>/bin/init.py --upgrade <project>
 | `tomllib` не найден | Python < 3.11 |
 
 <!-- agents:footer:start — генерируется scripts/doc_system.py sync; не редактировать вручную -->
-> 🤖 Проверено: 2026-11-13 · база: 6953424. Правила ведения документации — [AGENTS.md](../../AGENTS.md).
+> 🤖 Проверено: 2026-11-13 · база: 14852b7. Правила ведения документации — [AGENTS.md](../../AGENTS.md).
 <!-- agents:footer:end -->

@@ -27,7 +27,7 @@ title = "Участие в разработке"
 summary = "Правила для людей: подготовка, проверки, коммиты, документы"
 sources = ["Makefile", "scripts/doc_system.py"]
 sections = ["Перед началом", "Локальные проверки"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "CHANGELOG.md"
@@ -35,7 +35,7 @@ title = "История изменений"
 summary = "Живой журнал изменений в формате Keep a Changelog"
 sources = []
 sections = ["Unreleased"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/README.md"
@@ -43,7 +43,7 @@ title = "Индекс документации"
 summary = "С чего начать чтение и как поддерживать документы"
 sources = []
 sections = ["Порядок чтения", "Карта документации", "Как добавить новый документ"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/architecture.md"
@@ -59,7 +59,7 @@ sources = [
   "Identity.xcconfig",
 ]
 sections = ["Текущее состояние", "Целевая архитектура", "Инварианты", "Открытые вопросы"]
-verified = { commit = "6953424", date = "2026-11-12", time = 1794516872.394 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/project-map.md"
@@ -78,7 +78,7 @@ sources = [
   "build_windows.bat",
 ]
 sections = ["Дерево репозитория", "Задача → файлы", "Сборка и артефакты", "Данные и пути"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/development.md"
@@ -94,7 +94,7 @@ sources = [
   "tools/**",
 ]
 sections = ["Команды", "Тесты", "Хуки и CI", "Диагностика"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/roadmap.md"
@@ -102,7 +102,7 @@ title = "Дорожная карта"
 summary = "Снимок состояния и планируемые шаги"
 sources = []
 sections = ["Сейчас", "Дальше", "Потом"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/agents/workflow.md"
@@ -110,7 +110,7 @@ title = "Рабочий цикл агента"
 summary = "Пошаговый процесс: ориентация, изменения, проверка, отчёт"
 sources = ["Makefile", "docs.mk", "scripts/doc_system.py"]
 sections = ["Цикл работы", "Проверка результата", "Обновление документации", "Отчёт пользователю"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/agents/doc-maintenance.md"
@@ -118,7 +118,7 @@ title = "Поддержание документации"
 summary = "Устройство self-updating docs: манифест, команды, политика актуальности"
 sources = ["scripts/doc_system.py", "docs/docs.toml", "Makefile", "docs.mk"]
 sections = ["Манифест", "Команды", "Политика актуальности", "Генерируемые фрагменты"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/agents/handoff.md"
@@ -126,7 +126,7 @@ title = "Handoff — журнал передачи работы"
 summary = "Живой журнал: что сделано, что открыто, что делать дальше"
 sources = []
 sections = ["Формат записи"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/adr/README.md"
@@ -134,7 +134,7 @@ title = "ADR — оглавление и процесс"
 summary = "Как фиксировать архитектурные решения и как их читать"
 sources = []
 sections = ["Процесс", "Индекс", "Шаблон"]
-verified = { commit = "6953424", date = "2026-11-13", time = 1794517512.614 }
+verified = { commit = "14852b7", date = "2026-11-13", time = 1794517986.528 }
 
 [[doc]]
 path = "docs/adr/0001-record-architecture-decisions.md"
