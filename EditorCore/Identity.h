@@ -10,6 +10,7 @@
 #include "OxoSynth2Identity.h"
 #else
 #define OXO_DATA_FOLDER "Oxo Music/Oxo Synth2"
+#define OXO_LIBRARY_FOLDER "Oxo Music/Oxo Synth2"
 // No update check (the App Store updates the iPad app): empty product =
 // no menu entry, the site / email are then unused.
 #define OXO_UPDATE_PRODUCT ""
